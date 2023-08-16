@@ -1,0 +1,16 @@
+@use 'var';
+@use 'mixins';
+
+.container {
+}
+
+.taskHeader {
+  font-family: 'GmarketSans', sans-serif;
+  font-weight: 700;
+  @include mixins.h3;
+  color: var.$subheader-color;
+}
+
+.categorySection {
+  list-style-type: none;
+}

@@ -1,0 +1,46 @@
+@use 'mixins';
+@use 'var';
+
+.categoryHeader {
+  font-family: 'GmarketSans', sans-serif;
+  font-weight: 700;
+  color: #9b9898;
+  @include mixins.h5;
+  @include mixins.margin(y, xl);
+}
+
+.categoryContainer {
+  @include mixins.margin(y, xl);
+}
+
+.taskContainer {
+  @include mixins.margin(y, xl);
+}
+
+.taskHeader {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  @include mixins.margin(y, sm);
+}
+
+.taskDetails {
+  @include mixins.padding(left, 0);
+}
+
+.taskDetail {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    display: contents;
+    @include mixins.text-sm;
+  }
+}
+
+.taskDetail::before {
+  font-size: 0.7rem;
+  content: '•';
+  color: #0687f0;
+  @include mixins.margin(right, sm);
+}

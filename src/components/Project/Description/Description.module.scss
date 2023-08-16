@@ -1,0 +1,13 @@
+@use 'var';
+
+.container {
+  display: inline-block;
+  //vertical-align: middle;
+}
+
+.content {
+  font-style: italic;
+  font-weight: 300;
+  color: #777676;
+  white-space: pre-line;
+}

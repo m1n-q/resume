@@ -1,0 +1,20 @@
+@use 'var';
+@use 'mixins';
+
+.container {
+  display: inline-block;
+  font-family: 'GmarketSans', sans-serif;
+  @include mixins.text-xl;
+  @include mixins.margin(right, xl);
+  @include mixins.margin(y, 0);
+  font-weight: 900;
+}
+
+.title {
+  color: black;
+  @include mixins.h2;
+}
+
+.dot {
+  color: var.$header-color;
+}

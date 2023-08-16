@@ -1,0 +1,6 @@
+@use 'mixins';
+
+.root {
+  @include mixins.padding(y, xl);
+  @include mixins.padding(x, xl);
+}

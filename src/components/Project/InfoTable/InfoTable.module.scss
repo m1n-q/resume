@@ -1,0 +1,41 @@
+@use 'var';
+@use 'mixins';
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+.container {
+  width: 80%;
+  border-collapse: collapse;
+  @include mixins.margin(bottom, xl);
+}
+
+.badgeWrapper {
+  display: inline-block;
+  @include mixins.margin(right, sm);
+}
+
+.row {
+  @include mixins.text-sm;
+  border-bottom: 1px solid var.$line-color;
+}
+
+.rowHeader {
+  @include mixins.h4;
+  font-family: 'GmarketSans', sans-serif;
+  font-weight: 700;
+  color: var.$subheader-color;
+
+  text-align: left;
+  vertical-align: middle;
+
+  @include mixins.padding(right, xl);
+  @include mixins.padding(y, sm);
+}
+
+.techStackCell {
+  @include mixins.padding(y, md);
+  vertical-align: middle;
+}
+
+.stackBadge {
+  height: 1.25rem;
+}

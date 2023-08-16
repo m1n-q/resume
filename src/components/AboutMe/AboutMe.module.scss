@@ -1,0 +1,35 @@
+@use 'mixins';
+
+.container {
+  @include mixins.flex(row, space-between, center);
+  @include mixins.text-md;
+}
+
+.subHeader {
+  @include mixins.text-xl;
+  font-weight: 500;
+}
+
+.introContainer {
+  list-style-type: none;
+  @include mixins.padding(left, 0);
+  font-weight: 300;
+}
+
+.intro {
+}
+
+.intro::before {
+  font-size: 0.7rem;
+  content: '•';
+  color: #0687f0;
+  @include mixins.margin(right, sm);
+}
+
+.linkContainer {
+  list-style-type: none;
+  @include mixins.text-sm;
+}
+
+.link {
+}

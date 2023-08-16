@@ -1,0 +1,22 @@
+@use 'var';
+@use 'mixins';
+
+.container {
+  display: contents;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.iconWrapper {
+  display: inline-block;
+}
+
+.link {
+  font-size: inherit;
+  display: contents;
+}
+
+.space {
+  font-size: 0.5em;
+  display: contents;
+}

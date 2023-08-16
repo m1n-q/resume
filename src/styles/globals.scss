@@ -1,0 +1,26 @@
+@use 'sanitize';
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+html,
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100%;
+}
+
+a {
+  color: #5599e1;
+  text-decoration: none;
+}
+
+a:visited :active {
+  color: inherit;
+}
+
+a:hover {
+  color: #93bff3;
+}
+
+button {
+  cursor: pointer;
+}

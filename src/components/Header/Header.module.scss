@@ -1,0 +1,8 @@
+@use 'var';
+@use 'mixins';
+
+.header {
+  font-family: 'GmarketSans', sans-serif;
+  color: var.$header-color;
+  @include mixins.h1;
+}

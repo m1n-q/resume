@@ -1,0 +1,16 @@
+@use 'mixins';
+
+.container {
+  display: block;
+}
+
+.linkContainer {
+  @include mixins.margin(left, xl);
+  display: inline-block;
+}
+
+.tableWrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

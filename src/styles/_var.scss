@@ -1,0 +1,17 @@
+$size-xs: 2px;
+$size-sm: 4px;
+$size-md: 12px;
+$size-lg: 18px;
+$size-xl: 24px;
+
+$size: (
+  xs: $size-xs,
+  sm: $size-sm,
+  md: $size-md,
+  lg: $size-lg,
+  xl: $size-xl,
+);
+
+$header-color: #536ae5;
+$subheader-color: #99a0cb;
+$line-color: rgba(201, 201, 201, 0.87);

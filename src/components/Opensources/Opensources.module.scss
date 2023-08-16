@@ -1,0 +1,17 @@
+@use 'mixins';
+
+.container {
+}
+
+.row {
+}
+
+.repoInfo {
+  text-align: left;
+}
+
+.content {
+  text-align: left;
+  vertical-align: middle;
+  @include mixins.padding(left, lg);
+}

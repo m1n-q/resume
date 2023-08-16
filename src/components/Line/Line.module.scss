@@ -1,0 +1,6 @@
+@use 'mixins';
+
+.line {
+  @include mixins.margin(y, xl);
+  height: 0.01rem;
+}
