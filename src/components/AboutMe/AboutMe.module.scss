@@ -1,7 +1,10 @@
 @use 'mixins';
 
 .container {
-  @include mixins.flex(row, space-between, center);
+}
+
+.content {
+  @include mixins.flex(row, space-between, flex-end);
   @include mixins.text-md;
 }
 
@@ -14,13 +17,16 @@
   list-style-type: none;
   @include mixins.padding(left, 0);
   font-weight: 300;
+  word-break: keep-all;
 }
 
 .intro {
+  display: flex;
+  align-items: flex-start;
 }
 
 .intro::before {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   content: '•';
   color: #0687f0;
   @include mixins.margin(right, sm);
@@ -29,6 +35,9 @@
 .linkContainer {
   list-style-type: none;
   @include mixins.text-sm;
+  white-space: nowrap;
+  @include mixins.padding(left, 0);
+  @include mixins.margin(left, 0);
 }
 
 .link {

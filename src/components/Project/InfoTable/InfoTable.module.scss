@@ -3,8 +3,9 @@
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 .container {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
+  margin: auto;
   @include mixins.margin(bottom, xl);
 }
 

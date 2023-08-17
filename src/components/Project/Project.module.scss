@@ -4,13 +4,21 @@
   display: block;
 }
 
-.linkContainer {
-  @include mixins.margin(left, xl);
-  display: inline-block;
+.title {
+  display: block;
+}
+
+.titleContainer {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.additionalInfo {
+  display: inline;
 }
 
 .tableWrapper {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }

@@ -13,6 +13,16 @@ export default function InfoTable({ info }: InfoTableProps) {
     <table className={s.container}>
       <tbody>
         <tr className={s.row}>
+          <th className={s.rowHeader}>Links.</th>
+          <td>
+            {info.links?.map((link, i) => (
+              <div key={`link-${i}`} className={s.link}>
+                {link}
+              </div>
+            ))}
+          </td>
+        </tr>
+        <tr className={s.row}>
           <th className={s.rowHeader}>Period.</th>
           <td>{info.period}</td>
         </tr>

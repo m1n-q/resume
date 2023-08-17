@@ -7,6 +7,7 @@
   @include mixins.text-xl;
   @include mixins.margin(right, xl);
   @include mixins.margin(y, 0);
+  @include mixins.padding(y, 0);
   font-weight: 900;
 }
 

@@ -15,20 +15,25 @@
   @include mixins.h5;
   @include mixins.padding(right, xl);
   text-align: right;
-  border-right: 0.1px solid var.$line-color;
+  border-right: 1px solid rgba(231, 231, 231, 0.39);
+  white-space: nowrap;
 }
 
 .title {
   @include mixins.padding(left, xl);
+  @include mixins.text-sm;
   font-weight: 400;
 }
 
 .description {
   list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  @include mixins.text-sm;
 }
 
 .description::before {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   content: '•';
   color: #0687f0;
   @include mixins.margin(right, sm);

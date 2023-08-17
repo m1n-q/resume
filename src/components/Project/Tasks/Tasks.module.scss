@@ -11,6 +11,10 @@
   color: var.$subheader-color;
 }
 
+.taskBody {
+  @include mixins.padding(x, md);
+}
+
 .categorySection {
   list-style-type: none;
 }

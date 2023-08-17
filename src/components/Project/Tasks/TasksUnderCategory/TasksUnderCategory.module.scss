@@ -30,16 +30,17 @@
 .taskDetail {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   &__content {
-    display: contents;
+    display: flex;
     @include mixins.text-sm;
+    white-space: pre-line;
   }
 }
 
 .taskDetail::before {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   content: '•';
   color: #0687f0;
   @include mixins.margin(right, sm);

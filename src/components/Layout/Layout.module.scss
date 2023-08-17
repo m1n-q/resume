@@ -1,6 +1,18 @@
 @use 'mixins';
+@use 'var';
+//
+//.root {
+//}
 
 .root {
+  min-height: 100vh;
+  position: relative;
+  max-width: 50rem;
+  margin: auto;
   @include mixins.padding(y, xl);
   @include mixins.padding(x, xl);
+  //@include mixins.media('>small') {
+  //  max-width: map-get(mixins.$breakpoints, small);
+  //  margin: 0 auto;
+  //}
 }

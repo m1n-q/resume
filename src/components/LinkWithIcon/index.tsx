@@ -30,7 +30,9 @@ export default function LinkWithIcon({
 
   return (
     <span className={classnames(s.container, className)} ref={containerRef}>
-      <Icon width={fontSize} height={fontSize} />
+      <span>
+        <Icon width={fontSize} height={fontSize} />
+      </span>
       <span className={s.space}>&nbsp;</span>
       <a className={s.link} href={href} target={'_blank'}>
         {text}

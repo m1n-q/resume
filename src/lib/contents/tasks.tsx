@@ -42,13 +42,15 @@ const tasks: CategorizedTask[] = [
           </>
         ),
         lines: [
-          '큐레이션의 타이틀•부제•태그를 Tokenize,Okapi BM25 Rank 알고리즘 이용한 유사 게시글 검색 및 추천',
+          '큐레이션의 타이틀•부제•태그를 Tokenize,\nOkapi BM25 Rank 알고리즘 이용한 유사 게시글 검색 및 추천',
         ],
       },
       {
         header: (
           <>
-            리뷰 작성 시, (1)사진 업로드와 (2)장소 제안의{' '}
+            리뷰 작성 시, (1)
+            <ins>사진 업로드</ins>와 (2)
+            <ins>장소 제안</ins>의{' '}
             {makeLink(
               PullRequestIcon,
               '병렬 처리',
@@ -59,7 +61,7 @@ const tasks: CategorizedTask[] = [
         ),
         lines: [
           ' 업로드 된 사진의 메타데이터를 기반으로 장소를 제안하는 기능 - 사진의 S3 저장 및 좌표의 DB 쿼리가 필요',
-          '외부 API 콜과 DB 쿼리의 절차적 처리로 인해 느린 API 응답 속도를, 두 작업을 completableFuture / thenCombine을 이용해 병렬적으로 처리하여 개선',
+          '외부 API 콜과 DB 쿼리의 절차적 처리로 인해 느린 API 응답 속도를,\n두 작업을 completableFuture / thenCombine을 이용해 병렬적으로 처리하여 개선',
         ],
       },
       {
@@ -113,7 +115,7 @@ const tasks: CategorizedTask[] = [
         header: 'CI/CD 파이프라인 구축',
         lines: [
           'Tekton + ArgoCD CI/CD 파이프라인 구축',
-          '1) 프론트엔드와 모노레포 사용으로 인한, (2) 모노레포 기반 MSA를 대비한',
+          '(1) 프론트엔드와 모노레포 사용으로 인한, (2) 모노레포 기반 MSA를 대비한',
           <>
             {makeLink(
               GithubIcon,

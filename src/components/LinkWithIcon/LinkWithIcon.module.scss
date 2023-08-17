@@ -3,20 +3,18 @@
 
 .container {
   display: contents;
-  justify-content: space-between;
   font-weight: 400;
-}
-
-.iconWrapper {
-  display: inline-block;
+  align-items: flex-start;
+  white-space: pre;
 }
 
 .link {
   font-size: inherit;
   display: contents;
+  white-space: normal;
 }
 
 .space {
-  font-size: 0.5em;
   display: contents;
+  font-size: 0.5em;
 }

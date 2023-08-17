@@ -18,10 +18,11 @@ export default function Project({ info, categorizedTasks }: ProjectProps) {
   return (
     <div className={s.container}>
       <Header text={'Projects.'} />
-      <Title text={info.name} />
-      <Description text={info.description ? info.description : ''} />
-      <div className={s.linkContainer}>
-        {info.links?.map((link, i) => <div key={`${link}-${i}`}>{link}</div>)}
+      <div className={s.title}>
+        <Title text={info.name} />
+        <div className={s.additionalInfo}>
+          <Description text={info.description ? info.description : ''} />
+        </div>
       </div>
       <div className={s.tableWrapper}>
         <InfoTable info={info} />
