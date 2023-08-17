@@ -8,8 +8,6 @@ import { CategorizedTask } from '@/types/Task';
 import Description from '@/components/Project/Description';
 import Header from '@/components/Header';
 import React from 'react';
-import LinkWithIcon from '@/components/LinkWithIcon';
-import GithubIcon from '@/components/Icon/GithubIcon';
 
 interface ProjectProps {
   info: ProjectInfo;
@@ -23,7 +21,7 @@ export default function Project({ info, categorizedTasks }: ProjectProps) {
       <Title text={info.name} />
       <Description text={info.description ? info.description : ''} />
       <div className={s.linkContainer}>
-        <LinkWithIcon Icon={GithubIcon} text={'Source'} href={'a'} />
+        {info.links?.map((link, i) => <div key={`${link}-${i}`}>{link}</div>)}
       </div>
       <div className={s.tableWrapper}>
         <InfoTable info={info} />

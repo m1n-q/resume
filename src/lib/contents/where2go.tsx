@@ -1,11 +1,26 @@
 import ProjectInfo from '@/types/ProjectInfo';
 import stacks from '@/lib/contents/stacks';
 import Link from 'next/link';
+import LinkWithIcon from '@/components/LinkWithIcon';
+import GithubIcon from '@/components/Icon/GithubIcon';
+import ExternalLinkIcon from '@/components/Icon/ExternalLinkIcon';
 
 const where2go: ProjectInfo = {
-  name: 'where2Go',
+  name: 'where2go',
   period: '2023.03 -',
   team: 'Backend 1, Frontend 2',
+  links: [
+    <LinkWithIcon
+      Icon={ExternalLinkIcon}
+      text={'Site'}
+      href={'https://2cha.place'}
+    />,
+    <LinkWithIcon
+      Icon={GithubIcon}
+      text={'Source'}
+      href={'https://github.com/2-cha/2-cha'}
+    />,
+  ],
   role: [
     <>
       <Link href={'abc'}>ERD</Link> 설계
