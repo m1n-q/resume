@@ -18,7 +18,11 @@ const tasks: CategorizedTask[] = [
         header: (
           <>
             큐레이션 기능에서 유저가 관심 있을만한 컨텐츠 위주의 노출을 하고자,
-            {makeLink(PullRequestIcon, '추천 시스템 구현')}
+            {makeLink(
+              PullRequestIcon,
+              '추천 시스템 구현',
+              'https://github.com/2-cha/2-cha/pull/103'
+            )}
           </>
         ),
         lines: [
@@ -30,7 +34,11 @@ const tasks: CategorizedTask[] = [
         header: (
           <>
             다른 큐레이션으로의 자연스러운 탐색 유도를 위해,{' '}
-            {makeLink(PullRequestIcon, '유사 게시글 추천 기능 구현')}
+            {makeLink(
+              PullRequestIcon,
+              '유사 게시글 추천 기능 구현',
+              'https://github.com/2-cha/2-cha/pull/108'
+            )}
           </>
         ),
         lines: [
@@ -41,7 +49,12 @@ const tasks: CategorizedTask[] = [
         header: (
           <>
             리뷰 작성 시, (1)사진 업로드와 (2)장소 제안의{' '}
-            {makeLink(PullRequestIcon, '병렬 처리')}로 평균 RT 30% 개선
+            {makeLink(
+              PullRequestIcon,
+              '병렬 처리',
+              'https://github.com/2-cha/2-cha/pull/39'
+            )}
+            로 평균 RT 30% 개선
           </>
         ),
         lines: [
@@ -64,7 +77,8 @@ const tasks: CategorizedTask[] = [
           <>
             {makeLink(
               PullRequestIcon,
-              '한글 초성 및 Fuzzy Matching, 하이라이팅'
+              '한글 초성 및 Fuzzy Matching, 하이라이팅',
+              'https://github.com/2-cha/2-cha/pull/86'
             )}
             이 가능한 검색 기능 구현
           </>,
@@ -79,7 +93,16 @@ const tasks: CategorizedTask[] = [
     category: TaskCategory.DEVOPS,
     tasks: [
       {
-        header: <>{makeLink(GithubIcon, 'gitOps 레포지토리')} 구성 및 관리</>,
+        header: (
+          <>
+            {makeLink(
+              GithubIcon,
+              'gitOps 레포지토리',
+              'https://github.com/2-cha/gitops-config/tree/main'
+            )}{' '}
+            구성 및 관리
+          </>
+        ),
         lines: [
           '비용적 요소•운영경험 부족 등으로 클러스터 전체를 리셋해야 하는 상황이 빈번',
           '빠른 클러스터의 복구와 배포를 위해, ArgoCD 를 이용한 선언적 클러스터 관리',
@@ -94,7 +117,8 @@ const tasks: CategorizedTask[] = [
           <>
             {makeLink(
               GithubIcon,
-              '모듈(디렉토리) 기반의 Tekton 파이프라인 템플릿'
+              '모듈(디렉토리) 기반의 Tekton 파이프라인 템플릿',
+              'https://github.com/2-cha/gitops-config/blob/main/docs/README.md#cicd-with-tekton--argocd'
             )}{' '}
             작성
           </>,
@@ -114,7 +138,17 @@ const tasks: CategorizedTask[] = [
         ],
       },
       {
-        header: <>로그 중앙집중화 및 {makeLink(KibanaIcon, '대시보드')} 구축</>,
+        header: (
+          <>
+            로그 중앙집중화 및{' '}
+            {makeLink(
+              KibanaIcon,
+              '대시보드',
+              'https://api.2chaproj.com/kibana/app/dashboards#/view/4de3fae0-084b-11ee-b8f1-057c5d5c739d'
+            )}{' '}
+            구축
+          </>
+        ),
         lines: [
           'Multi-instance로 배포중인 애플리케이션의 로그가 산발적이어서 확인이 어려움',
           'Logback + ELK Integration으로 로그의 중앙집중화 달성',

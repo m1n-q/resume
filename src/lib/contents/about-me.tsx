@@ -17,7 +17,7 @@ const aboutMe = {
     <LinkWithIcon
       Icon={MailIcon}
       text={'m1nq.dev@gmail.com'}
-      href={'m1nq.dev@gmail.com'}
+      href={'mailto:m1nq.dev@gmail.com'}
     />,
   ],
 };
