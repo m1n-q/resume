@@ -13,7 +13,10 @@ interface OpenSourcesProps {
 export default function OpenSource({ infos }: OpenSourcesProps) {
   return (
     <>
-      <Header text={'Others.'} />
+      <Header text={'Open Sources.'} />
+      <div className={s.shortDesc}>
+        간단한 PR, 이슈 작성 등의 오픈소스 기여가 있습니다.
+      </div>
       <table className={s.container}>
         <tbody>
           {infos.map((info, i) => {

@@ -3,6 +3,13 @@
 .container {
 }
 
+.shortDesc {
+  text-align: left;
+  vertical-align: middle;
+  //@include mixins.margin(x, lg);
+  @include mixins.margin(y, xl);
+}
+
 .row {
 }
 
@@ -11,7 +18,7 @@
 }
 
 .content {
+  vertical-align: text-top;
   text-align: left;
-  vertical-align: middle;
   @include mixins.padding(left, lg);
 }
