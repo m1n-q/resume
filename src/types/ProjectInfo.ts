@@ -5,7 +5,7 @@ export default interface ProjectInfo {
   description?: string;
   team?: string;
   period?: string;
-  role?: React.ReactNode[];
+  role: React.ReactNode[];
   links?: React.ReactNode[];
   techStack?: {
     backend?: string[];

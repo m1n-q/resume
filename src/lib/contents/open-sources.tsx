@@ -11,19 +11,26 @@ const openSources: RepoInfo[] = [
       },
     ],
     links: [
-      { text: 'PR', href: 'string' },
-      { text: 'Issue', href: 'string' },
+      { text: 'PR', href: 'https://github.com/golevelup/nestjs/pull/535' },
+      { text: 'Issue', href: 'https://github.com/golevelup/nestjs/issues/518' },
     ],
   },
   {
     user: 'kubernetes',
     repo: 'kops',
-    links: [{ text: 'Issue', href: 'string' }],
+    links: [
+      {
+        text: 'Issue',
+        href: 'https://github.com/kubernetes/kops/issues/15624',
+      },
+    ],
   },
   {
     user: 'tektoncd',
     repo: 'triggers',
-    links: [{ text: 'PR', href: 'string' }],
+    links: [
+      { text: 'PR', href: 'https://github.com/tektoncd/triggers/issues/1561' },
+    ],
   },
 ];
 

@@ -22,7 +22,14 @@ export default function InfoTable({ info }: InfoTableProps) {
         </tr>
         <tr className={s.row}>
           <th className={s.rowHeader}>Role.</th>
-          <td>{info.role}</td>
+          <td>
+            {info.role.map((r, i) => (
+              <span key={`role-${i}`}>
+                {r}
+                {i !== info.role.length - 1 ? ', ' : ''}
+              </span>
+            ))}
+          </td>
         </tr>
         <tr className={s.row}>
           <th className={s.rowHeader}>Tech Stack.</th>
