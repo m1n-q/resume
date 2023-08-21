@@ -1,4 +1,5 @@
 import React from 'react';
+import { CategorizedTask } from '@/types/Task';
 
 export default interface ProjectInfo {
   name: string;
@@ -11,4 +12,5 @@ export default interface ProjectInfo {
     backend?: string[];
     devOps?: string[];
   };
+  tasks: CategorizedTask[];
 }

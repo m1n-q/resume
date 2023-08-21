@@ -2,7 +2,7 @@ import React from 'react';
 import { CategorizedTask } from '@/types/Task';
 
 import s from './Tasks.module.scss';
-import TasksUnderCategory from '@/components/Project/Tasks/TasksUnderCategory';
+import TasksUnderCategory from '@/components/Projects/Tasks/TasksUnderCategory';
 
 interface TasksProps {
   categorizedTasks: CategorizedTask[];

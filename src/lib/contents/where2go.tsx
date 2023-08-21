@@ -1,9 +1,28 @@
 import ProjectInfo from '@/types/ProjectInfo';
-import stacks from '@/lib/contents/stacks';
 import Link from 'next/link';
 import LinkWithIcon from '@/components/LinkWithIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
 import ExternalLinkIcon from '@/components/Icon/ExternalLinkIcon';
+import where2goTasks from '@/lib/contents/where2goTasks';
+
+/* TODO
+ * 1. ‼️postGIS => spatial index
+ * 2. FCM - (참고: https://medium.com/daangn/%EB%8B%B9%EA%B7%BC%EB%A7%88%EC%BC%93%EC%9D%98-%ED%91%B8%EC%8B%9C%EC%95%8C%EB%A6%BC%EC%9D%84-%EC%A7%80%ED%83%B1%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94-node-js-%EC%84%9C%EB%B9%84%EC%8A%A4-19023ad86fc)
+ */
+
+const stacks = {
+  backend: [
+    'Spring Boot',
+    'Spring MVC',
+    'Spring Data JPA',
+    'JPA',
+    'QueryDSL',
+    'hibernate--search',
+    'postgreSQL',
+    'Redis',
+  ],
+  devOps: ['Kubernetes', 'AWS', 'Tekton', 'ArgoCD', 'Prometheus', 'ELK'],
+};
 
 const where2go: ProjectInfo = {
   name: 'where2go',
@@ -52,6 +71,7 @@ const where2go: ProjectInfo = {
     backend: stacks['backend'],
     devOps: stacks['devOps'],
   },
+  tasks: where2goTasks,
 };
 
 export default where2go;

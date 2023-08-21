@@ -10,7 +10,7 @@ function makeLink(icon: IconComponent, text: string, href?: string) {
   return <LinkWithIcon Icon={icon} text={text} href={href ? href : 'href'} />;
 }
 
-const tasks: CategorizedTask[] = [
+const where2goTasks: CategorizedTask[] = [
   {
     category: TaskCategory.BACKEND,
     tasks: [
@@ -160,4 +160,4 @@ const tasks: CategorizedTask[] = [
   },
 ];
 
-export default tasks;
+export default where2goTasks;
