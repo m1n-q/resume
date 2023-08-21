@@ -31,7 +31,7 @@ const transcendence: ProjectInfo = {
     <LinkWithIcon
       Icon={GithubIcon}
       text={'Source'}
-      href={'https://github.com/over-ther-inner-circle/transcendence'}
+      href={'https://github.com/over-the-inner-circle/transcendence'}
     />,
   ],
   role: ['ERD 설계', 'API 설계 및 개발'],
