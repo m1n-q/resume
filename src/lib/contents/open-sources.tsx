@@ -29,7 +29,10 @@ const openSources: RepoInfo[] = [
     user: 'tektoncd',
     repo: 'triggers',
     links: [
-      { text: 'PR', href: 'https://github.com/tektoncd/triggers/issues/1561' },
+      {
+        text: 'Issue',
+        href: 'https://github.com/tektoncd/triggers/issues/1561',
+      },
     ],
   },
 ];
