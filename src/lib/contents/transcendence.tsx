@@ -2,13 +2,10 @@ import ProjectInfo from '@/types/ProjectInfo';
 import LinkWithIcon from '@/components/LinkWithIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
 import transcendenceTasks from '@/lib/contents/transcendenceTasks';
+import Link from 'next/link';
 
 /* TODO
- * 1. 말 정리해놓기
- * 2. ERD, API 문서 넣기
- * 3. ‼️각 구현 내용 아키텍처 그리기
- * 4. 실행 방법 및 기능 상세 README
- * 5. 기타 API 구현한 것을 어떻게 어필할지?
+ * 1. 실행 방법 및 기능 상세 README
  */
 
 const stacks = {
@@ -34,7 +31,28 @@ const transcendence: ProjectInfo = {
       href={'https://github.com/over-the-inner-circle/transcendence'}
     />,
   ],
-  role: ['ERD 설계', 'API 설계 및 개발'],
+  role: [
+    <>
+      <Link
+        target={'_blank'}
+        href={
+          'https://file.notion.so/f/s/3d327168-ba9b-4881-b2b8-2b2321ec5487/Untitled.png?id=39009e7f-b986-4bb9-977f-012dbf66b110&table=block&spaceId=08b8d508-4b1c-46d6-a7e3-0d0f07f6f42b&expirationTimestamp=1692698400000&signature=eZ6JqlFbmW1naW_SyR4k8TJs0rngbunjRK6lwX3ZOGI&downloadName=Untitled.png'
+        }
+      >
+        ERD
+      </Link>{' '}
+      설계
+    </>,
+    <>
+      <Link
+        target={'_blank'}
+        href={'https://m1n-q.github.io/transcendence/transcendence.html'}
+      >
+        API
+      </Link>{' '}
+      설계 및 개발
+    </>,
+  ],
   description: '채팅•DM•푸시 등 간단한 소셜 기능을 제공하는 핑퐁 웹 게임',
   techStack: {
     backend: stacks['backend'],
