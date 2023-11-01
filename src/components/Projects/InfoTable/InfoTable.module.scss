@@ -27,8 +27,8 @@
 
   text-align: left;
   vertical-align: middle;
-
-  @include mixins.padding(right, xl);
+  width: 25%;
+  @include mixins.padding(right, lg);
   @include mixins.padding(y, sm);
 }
 
