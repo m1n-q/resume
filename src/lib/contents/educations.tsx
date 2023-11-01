@@ -11,7 +11,7 @@ const educations: EducationInfo[] = [
     title: '부트캠프 42Seoul 수료',
   },
   {
-    period: '-',
+    period: 'etc',
     title: 'TOEIC 875',
   },
 ];
