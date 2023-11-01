@@ -13,15 +13,18 @@ import where2goTasks from '@/lib/contents/where2goTasks';
 const stacks = {
   backend: [
     'Spring Boot',
-    'Spring MVC',
-    'Spring Data JPA',
     'JPA',
     'QueryDSL',
-    'hibernate--search',
-    'postgreSQL',
     'Redis',
+    // 'postgreSQL', 'hibernate--search',
   ],
-  devOps: ['Kubernetes', 'AWS', 'Tekton', 'ArgoCD', 'Prometheus', 'ELK'],
+  devOps: [
+    'Kubernetes',
+    'AWS',
+    'Tekton',
+    'ArgoCD',
+    // 'Prometheus', 'ELK'
+  ],
 };
 
 const where2go: ProjectInfo = {

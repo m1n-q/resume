@@ -4,20 +4,16 @@ import GithubIcon from '@/components/Icon/GithubIcon';
 import transcendenceTasks from '@/lib/contents/transcendenceTasks';
 import Link from 'next/link';
 
-/* TODO
- * 1. 실행 방법 및 기능 상세 README
- */
-
 const stacks = {
   backend: [
-    'Typescript',
     'NestJS',
-    'TypeORM',
-    'postgreSQL',
-    'Redis',
+    'Socket.io',
     'RabbitMQ',
+    // 'Typescript', 'TypeORM', 'Redis',
   ],
-  devOps: ['Jenkins', 'Docker Compose'],
+  devOps: [
+    // 'Jenkins', 'Docker Compose'
+  ],
 };
 
 const transcendence: ProjectInfo = {
