@@ -17,7 +17,8 @@ const where2goTasks: CategorizedTask[] = [
       {
         header: (
           <>
-            큐레이션 기능에서 유저가 관심 있을만한 컨텐츠 위주의 노출을 하고자,
+            큐레이션 기능에서 유저가 관심 있을만한 컨텐츠 위주의 노출을
+            하고자,&nbsp;
             {makeLink(
               PullRequestIcon,
               '추천 시스템 구현',
@@ -73,7 +74,7 @@ const where2goTasks: CategorizedTask[] = [
       },
       {
         header:
-          '리뷰 작성 과정에서 태그 검색 시, 한글 초성•Fuzzy Matching•자동 완성 기능 지원하여 사용자 편의성 증대',
+          '리뷰 작성 과정에서 태그 검색 시, 한글 초성•Fuzzy Matching 지원으로 사용자 편의성 증대',
         lines: [
           '리뷰 작성 과정을 간소화하여 유저 이탈 요소를 최소화 하고자,',
           <>
@@ -108,15 +109,15 @@ const where2goTasks: CategorizedTask[] = [
         lines: [
           '비용적 요소•운영경험 부족 등으로 클러스터 전체를 리셋해야 하는 상황이 빈번',
           '빠른 클러스터의 복구와 배포를 위해, ArgoCD 를 이용한 선언적 클러스터 관리',
-          '장애 상황에서 30분 이내 클러스터 리셋 가능',
+          '장애 상황에서 10분 이내 클러스터 리셋 가능',
         ],
       },
       {
         header: 'CI/CD 파이프라인 구축',
         lines: [
           'Tekton + ArgoCD CI/CD 파이프라인 구축',
-          '(1) 프론트엔드와 모노레포 사용으로 인한, (2) 모노레포 기반 MSA를 대비한',
           <>
+            모노레포 기반 MSA를 대비한&nbsp;
             {makeLink(
               GithubIcon,
               '모듈(디렉토리) 기반의 Tekton 파이프라인 템플릿',
