@@ -1,12 +1,19 @@
 @use 'var';
 @use 'mixins';
 
+.container {
+  position: relative;
+
+}
+
 .previewContainer {
   position: absolute;
   z-index: 999;
   width: 300px;
   aspect-ratio: 16/9;
   border: 1px #a0a0a0 solid;
+  //bottom: 0;
+  //left: 0;
 }
 
 .preview {

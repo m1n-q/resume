@@ -20,15 +20,15 @@ export default function LinkWithPreview({
   enableIcon = false,
 }: LinkWithPreviewProps) {
   const [isHovering, setIsHovering] = useState(false);
-  const handleMouseOver = () => setIsHovering(true);
-  const handleMouseOut = () => setIsHovering(false);
+  const handleMouseEnter = () => setIsHovering(true);
+  const handleMouseLeave = () => setIsHovering(false);
 
   return (
     <>
       <span
         className={classnames(s.container, className)}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         {enableIcon ? (
           <LinkWithIcon Icon={ImageIcon} text={text} href={href} />
@@ -37,12 +37,12 @@ export default function LinkWithPreview({
             {text}
           </Link>
         )}
+        {isHovering && (
+          <div className={s.previewContainer}>
+            <img className={s.preview} src={href} alt={text}></img>
+          </div>
+        )}
       </span>
-      {isHovering && (
-        <div className={s.previewContainer}>
-          <img className={s.preview} src={href} alt={text}></img>
-        </div>
-      )}
     </>
   );
 }
