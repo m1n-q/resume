@@ -39,7 +39,7 @@ export default function OpenSource({ infos }: OpenSourcesProps) {
                 </th>
                 <td className={s.content}>
                   {info.links?.map(({ href, text }, i) => (
-                    <a key={`${name}-link-${i}`} href={href}>
+                    <a key={`${name}-link-${i}`} href={href} target={'_blank'}>
                       {text}{' '}
                     </a>
                   ))}
