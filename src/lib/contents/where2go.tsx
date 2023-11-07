@@ -4,6 +4,7 @@ import LinkWithIcon from '@/components/LinkWithIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
 import ExternalLinkIcon from '@/components/Icon/ExternalLinkIcon';
 import where2goTasks from '@/lib/contents/where2goTasks';
+import LinkWithPreview from '@/components/LinkWithPreview';
 
 /* TODO
  * 1. ‼️postGIS => spatial index
@@ -45,10 +46,7 @@ const where2go: ProjectInfo = {
   ],
   role: [
     <>
-      <Link target={'_blank'} href={'/assets/where2go-erd.png'}>
-        ERD
-      </Link>{' '}
-      설계
+      <LinkWithPreview text={'ERD'} href={'/assets/where2go-erd.png'} /> 설계
     </>,
     <>
       <Link target={'_blank'} href={'https://2-cha.github.io/openapi'}>
@@ -57,9 +55,11 @@ const where2go: ProjectInfo = {
       설계 및 구현
     </>,
     <>
-      <Link target={'_blank'} href={'/assets/where2go-aws.png'}>
-        AWS 인프라
-      </Link>{' '}
+      <LinkWithPreview
+        text={'AWS 인프라'}
+        href={'/assets/where2go-aws.png'}
+        // enableIcon={true}
+      />{' '}
       설계 및 구성
     </>,
   ],

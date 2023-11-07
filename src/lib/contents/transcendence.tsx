@@ -3,6 +3,7 @@ import LinkWithIcon from '@/components/LinkWithIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
 import transcendenceTasks from '@/lib/contents/transcendenceTasks';
 import Link from 'next/link';
+import LinkWithPreview from '@/components/LinkWithPreview';
 
 const stacks = {
   backend: [
@@ -29,9 +30,7 @@ const transcendence: ProjectInfo = {
   ],
   role: [
     <>
-      <Link target={'_blank'} href={'/assets/transcendence-erd.png'}>
-        ERD
-      </Link>{' '}
+      <LinkWithPreview text={'ERD'} href={'/assets/transcendence-erd.png'} />{' '}
       설계
     </>,
     <>
