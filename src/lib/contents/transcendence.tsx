@@ -29,12 +29,7 @@ const transcendence: ProjectInfo = {
   ],
   role: [
     <>
-      <Link
-        target={'_blank'}
-        href={
-          'https://file.notion.so/f/s/3d327168-ba9b-4881-b2b8-2b2321ec5487/Untitled.png?id=39009e7f-b986-4bb9-977f-012dbf66b110&table=block&spaceId=08b8d508-4b1c-46d6-a7e3-0d0f07f6f42b&expirationTimestamp=1692698400000&signature=eZ6JqlFbmW1naW_SyR4k8TJs0rngbunjRK6lwX3ZOGI&downloadName=Untitled.png'
-        }
-      >
+      <Link target={'_blank'} href={'/assets/transcendence-erd.png'}>
         ERD
       </Link>{' '}
       설계
