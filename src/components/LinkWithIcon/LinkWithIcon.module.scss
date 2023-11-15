@@ -2,19 +2,13 @@
 @use 'mixins';
 
 .container {
-  display: contents;
   font-weight: 400;
-  align-items: flex-start;
-  white-space: pre;
 }
 
 .link {
   font-size: inherit;
-  display: contents;
-  white-space: normal;
 }
 
 .space {
-  display: contents;
   font-size: 0.5em;
 }
