@@ -33,7 +33,6 @@
   align-items: flex-start;
 
   &__content {
-    display: flex;
     @include mixins.text-sm;
     white-space: pre-line;
   }
