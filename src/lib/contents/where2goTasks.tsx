@@ -74,13 +74,13 @@ const where2goTasks: CategorizedTask[] = [
       },
       {
         header:
-          '리뷰 작성 과정에서 태그 검색 시, 한글 초성•Fuzzy Matching 지원으로 사용자 편의성 증대',
+          '리뷰 작성 과정에서 태그 검색 시, 한글 초성•하이라이팅 지원으로 사용자 편의성 증대',
         lines: [
           '리뷰 작성 과정을 간소화하여 유저 이탈 요소를 최소화 하고자,',
           <>
             {makeLink(
               PullRequestIcon,
-              '한글 초성 및 Fuzzy Matching, 하이라이팅',
+              '한글 초성 검색 및 매칭 문자 하이라이팅',
               'https://github.com/2-cha/2-cha/pull/86'
             )}
             이 가능한 검색 기능 구현
@@ -117,7 +117,6 @@ const where2goTasks: CategorizedTask[] = [
         lines: [
           'Tekton + ArgoCD CI/CD 파이프라인 구축',
           <>
-            모노레포 기반 MSA를 대비한&nbsp;
             {makeLink(
               GithubIcon,
               '모듈(디렉토리) 기반의 Tekton 파이프라인 템플릿',
