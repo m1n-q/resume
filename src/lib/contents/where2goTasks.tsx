@@ -6,8 +6,20 @@ import GithubIcon from '@/components/Icon/GithubIcon';
 import IconComponent from '@/components/Icon/IconComponent';
 import KibanaIcon from '@/components/Icon/KibanaIcon';
 
-function makeLink(icon: IconComponent, text: string, href?: string) {
-  return <LinkWithIcon Icon={icon} text={text} href={href ? href : 'href'} />;
+function makeLink(
+  icon: IconComponent,
+  text: string,
+  href?: string,
+  disabled?: boolean
+) {
+  return (
+    <LinkWithIcon
+      Icon={icon}
+      text={text}
+      href={href ? href : 'href'}
+      disabled={disabled}
+    />
+  );
 }
 
 const where2goTasks: CategorizedTask[] = [
@@ -146,7 +158,8 @@ const where2goTasks: CategorizedTask[] = [
             {makeLink(
               KibanaIcon,
               '대시보드',
-              'https://api.2chaproj.com/kibana/app/dashboards#/view/4de3fae0-084b-11ee-b8f1-057c5d5c739d'
+              'https://api.2chaproj.com/kibana/app/dashboards#/view/4de3fae0-084b-11ee-b8f1-057c5d5c739d',
+              true
             )}{' '}
             구축
           </>

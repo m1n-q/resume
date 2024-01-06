@@ -37,6 +37,7 @@ const where2go: ProjectInfo = {
       Icon={ExternalLinkIcon}
       text={'Site'}
       href={'https://2cha.place'}
+      disabled={true}
     />,
     <LinkWithIcon
       Icon={GithubIcon}
