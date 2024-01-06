@@ -9,6 +9,12 @@
   font-size: inherit;
 }
 
+.disabled {
+  font-size: inherit;
+  color: rgba(117, 117, 117, 0.80);
+  text-decoration-line: line-through;
+}
+
 .space {
   font-size: 0.5em;
 }
