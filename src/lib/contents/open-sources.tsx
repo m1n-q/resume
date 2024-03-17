@@ -25,16 +25,16 @@ const openSources: RepoInfo[] = [
       },
     ],
   },
-  {
-    user: 'tektoncd',
-    repo: 'triggers',
-    links: [
-      {
-        text: 'Issue',
-        href: 'https://github.com/tektoncd/triggers/issues/1561',
-      },
-    ],
-  },
+  // {
+  //   user: 'tektoncd',
+  //   repo: 'triggers',
+  //   links: [
+  //     {
+  //       text: 'Issue',
+  //       href: 'https://github.com/tektoncd/triggers/issues/1561',
+  //     },
+  //   ],
+  // },
 ];
 
 export default openSources;
