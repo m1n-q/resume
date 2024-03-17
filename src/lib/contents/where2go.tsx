@@ -35,7 +35,7 @@ const where2go: ProjectInfo = {
   links: [
     <LinkWithIcon
       Icon={ExternalLinkIcon}
-      text={'Site'}
+      text={'배포 중단'}
       href={'https://2cha.place'}
       disabled={true}
     />,
