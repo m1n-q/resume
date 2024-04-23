@@ -138,17 +138,19 @@ const where2goTasks: CategorizedTask[] = [
           </>,
         ],
       },
-      {
-        header: '고가용성 Redis 구축',
-        lines: [
-          '인증 로직과 연관된 Redis의 안정적인 운영 필요',
-          'Redis sentinel + HAproxy를 이용한 HA 구성',
-        ],
-      },
+      // {
+      //   header: 'Redis Auto Failover 구성',
+      //   lines: [
+      //     // '인증 로직과 연관된 Redis의 안정적인 운영 필요',
+      //     'Refresh Token 중앙 저장소',
+      //     'Redis sentinel + HAproxy를 이용한 HA 구성',
+      //   ],
+      // },
       {
         header: 'RPS 기반의 Autoscaling 구축',
         lines: [
-          'Prometheus + k8s HPA를 이용한 Autoscaling 구축으로 부하상황에서의 평균 RT 개선 및 TPS 유지',
+          // 'Prometheus + k8s HPA를 이용한 Autoscaling 구축으로 부하상황에서의 평균 RT 개선 및 TPS 유지',
+          'k8s HPA 및 AWS ASG 이용한 Autoscaling 구축으로 부하상황에서의 평균 RT 개선 및 TPS 유지',
         ],
       },
       {
