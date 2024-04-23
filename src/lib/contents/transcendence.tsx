@@ -43,7 +43,7 @@ const transcendence: ProjectInfo = {
       설계 및 개발
     </>,
   ],
-  description: '채팅•DM•푸시 등 간단한 소셜 기능을 제공하는 핑퐁 웹 게임',
+  description: '채팅•DM 등 간단한 소셜 기능을 제공하는 핑퐁 웹 게임',
   techStack: {
     backend: stacks['backend'],
     devOps: stacks['devOps'],
