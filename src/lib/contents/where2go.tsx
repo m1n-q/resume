@@ -30,7 +30,7 @@ const stacks = {
 
 const where2go: ProjectInfo = {
   name: 'where2go',
-  period: '2023.03 -',
+  period: '2023.03 - 2023.08',
   team: 'Backend 1, Frontend 2',
   links: [
     <LinkWithIcon
