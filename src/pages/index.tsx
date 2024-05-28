@@ -2,6 +2,7 @@ import React, { DetailedHTMLProps, useEffect, useRef, useState } from 'react';
 import Projects from '../components/Projects';
 import OpenSource from '../components/Opensources';
 import AboutMe from '@/components/AboutMe';
+import Certificates from '@/components/Certificates';
 import educations from '@/lib/contents/educations';
 import openSources from '@/lib/contents/open-sources';
 import aboutMe from '@/lib/contents/about-me';
@@ -9,6 +10,7 @@ import where2go from '@/lib/contents/where2go';
 import Line from '@/components/Line';
 import Educations from '@/components/Educations';
 import transcendence from '@/lib/contents/transcendence';
+import certificates from '@/lib/contents/certificates';
 import Notice from '@/components/Notice';
 import { useReactToPrint } from 'react-to-print';
 
@@ -49,6 +51,8 @@ export default function Home() {
       <Projects infos={[where2go, transcendence]} />
       <Line />
       <OpenSource infos={openSources} />
+      <Line />
+      <Certificates certificates={certificates} />
       <Line />
       <Educations educations={educations} />
     </div>

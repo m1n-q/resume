@@ -1,0 +1,33 @@
+@use 'mixins';
+@use 'var';
+
+.content {
+  //@include mixins.flex(row, space-between, flex-end);
+  @include mixins.flex(column, space-between, flex-start);
+  @include mixins.text-md;
+}
+
+.certContainer {
+  list-style-type: none;
+  @include mixins.padding(left, 0);
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+.certItem {
+  font-weight: 400;
+}
+
+.certItem::before {
+  font-size: 0.8rem;
+  content: '•';
+  color: #0687f0;
+  @include mixins.margin(right, sm);
+}
+
+.badge {
+  @include mixins.margin(right, sm);
+  width: var.$size-xl;
+  height: var.$size-xl;
+  cursor: pointer;
+}
