@@ -17,13 +17,34 @@
   @include mixins.margin(y, xl);
 }
 
+.taskHeaderContainer {
+  line-height: 1rem;
+}
+
+.foldable {
+  cursor: pointer;
+}
+
+.foldable:hover {
+  background-color: #f5f5f5;
+}
+
 .taskHeader {
+  @include mixins.padding(right, xs);
+
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
-  @include mixins.margin(y, sm);
+}
+
+.foldingArrow {
+  @include mixins.padding(left, xs);
+  padding-bottom: 2px;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .taskDetails {
+  @include mixins.margin(y, md);
   @include mixins.padding(left, 0);
 }
 
