@@ -9,6 +9,10 @@ const educations: EducationInfo[] = [
   {
     period: '2021.05 ~ 2022.12',
     title: '부트캠프 42Seoul 수료',
+    descriptions: [
+      'POSIX 환경 및 C•C++를 사용한 다수 프로젝트로 기초 CS 및 프로그래밍 역량 향상',
+      '팀 프로젝트•코드 리뷰•페어 프로그래밍 활동을 통한 커뮤니케이션 능력 함양',
+    ],
   },
   {
     period: 'etc',
