@@ -6,11 +6,6 @@ import ExternalLinkIcon from '@/components/Icon/ExternalLinkIcon';
 import where2goTasks from '@/lib/contents/where2goTasks';
 import LinkWithPreview from '@/components/LinkWithPreview';
 
-/* TODO
- * 1. ‼️postGIS => spatial index
- * 2. FCM - (참고: https://medium.com/daangn/%EB%8B%B9%EA%B7%BC%EB%A7%88%EC%BC%93%EC%9D%98-%ED%91%B8%EC%8B%9C%EC%95%8C%EB%A6%BC%EC%9D%84-%EC%A7%80%ED%83%B1%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94-node-js-%EC%84%9C%EB%B9%84%EC%8A%A4-19023ad86fc)
- */
-
 const stacks = {
   backend: [
     'Spring Boot',
@@ -54,14 +49,6 @@ const where2go: ProjectInfo = {
         API
       </Link>{' '}
       설계 및 구현
-    </>,
-    <>
-      <LinkWithPreview
-        text={'AWS 인프라'}
-        href={'/assets/where2go-aws.png'}
-        // enableIcon={true}
-      />{' '}
-      설계 및 구성
     </>,
   ],
   description:
