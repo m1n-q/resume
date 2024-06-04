@@ -12,7 +12,7 @@ export default function AboutMe({ introduces, links }: AboutMeProps) {
   return (
     <div className={s.container}>
       <Header text={'About.'} />
-      <div className={s.subHeader}>신입 백엔드 개발자 신민규입니다.</div>
+      <div className={s.subHeader}>신입 개발자 신민규입니다.</div>
       <div className={s.content}>
         <ul className={s.introContainer}>
           {introduces?.map((introduce, i) => (
