@@ -49,11 +49,11 @@ export default function Home() {
       )}
       <AboutMe introduces={aboutMe.introduces} links={aboutMe.links} />
       <Line />
+      <Certificates certificates={certificates} />
+      <Line />
       <Projects infos={[where2go, pushManager, transcendence]} />
       <Line />
       <OpenSource infos={openSources} />
-      <Line />
-      <Certificates certificates={certificates} />
       <Line />
       <Educations educations={educations} />
     </div>
