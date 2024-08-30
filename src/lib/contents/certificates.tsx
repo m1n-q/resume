@@ -2,14 +2,16 @@ import CertificateInfo from '@/types/CertificateInfo';
 
 const certificates: CertificateInfo[] = [
   {
-    title: 'AWS Certified Solutions Architect - Associate (SAA)',
-    badgeAsset: '/assets/aws-saa-badge.png',
+    title: 'AWS SAA: Certified Solutions Architect Associate',
+    badgeAsset: '/assets/aws-saa.png',
   },
   {
     title: 'HashiCorp Certified Terraform Associate',
+    badgeAsset: '/assets/terraform.png',
   },
   {
-    title: 'Certified Kubernetes Administrator (CKA)',
+    title: 'CKA: Certified Kubernetes Administrator',
+    badgeAsset: '/assets/cka.png',
   },
 ];
 
