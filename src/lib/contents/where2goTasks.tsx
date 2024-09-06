@@ -1,11 +1,10 @@
-import { CategorizedTask, TaskCategory } from '@/types/Task';
-import React from 'react';
-import LinkWithIcon from '@/components/LinkWithIcon';
-import PullRequestIcon from '@/components/Icon/PullRequestIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
 import IconComponent from '@/components/Icon/IconComponent';
-import KibanaIcon from '@/components/Icon/KibanaIcon';
+import PullRequestIcon from '@/components/Icon/PullRequestIcon';
+import LinkWithIcon from '@/components/LinkWithIcon';
 import LinkWithPreview from '@/components/LinkWithPreview';
+import { CategorizedTask, TaskCategory } from '@/types/Task';
+import React from 'react';
 
 function makeLink(
   icon: IconComponent,
@@ -52,50 +51,50 @@ const where2goTasks: CategorizedTask[] = [
             <ins>DB 쿼리</ins>
             {' 필요'}
           </>,
-          '외부 API 콜과 DB 쿼리의 절차적 처리로 인해 느린 API 응답 속도를,\n두 작업을 completableFuture / thenCombine을 이용해 병렬적으로 처리하여 개선',
+          '외부 API 콜과 DB 쿼리의 동기적 처리로 인해 느린 API 응답 속도를,\n두 작업을 completableFuture / thenCombine을 이용해 병렬적으로 처리하여 개선',
         ],
       },
       {
         header: 'Spatial Index 적용으로 장소 리스팅 쿼리 성능 2배 향상',
       },
-      {
-        header: (
-          <>
-            Collaborative Filtering 활용&nbsp;
-            {makeLink(
-              PullRequestIcon,
-              '추천 시스템 구현',
-              'https://github.com/2-cha/2-cha/pull/103'
-            )}
-          </>
-        ),
-        lines: [
-          '유저의 활동을 기반으로 선호를 수치화하여, Collaborative Filtering을 적용',
-          '위치•최신순 기반의 Hybrid 방식 적용으로 Cold Start Problem 및 추천 로직에 대한 Fallback 마련',
-        ],
-      },
-      {
-        header: (
-          <>
-            Okapi BM25 Rank 알고리즘을 사용한&nbsp;
-            {makeLink(
-              PullRequestIcon,
-              '유사 게시글 추천 기능 구현',
-              'https://github.com/2-cha/2-cha/pull/108'
-            )}
-          </>
-        ),
-        lines: [
-          '다른 큐레이션으로의 자연스러운 탐색 유도를 위해,\n유저가 읽은 큐레이션의 타이틀•부제•태그를 활용한 유사 게시글 추천',
-        ],
-      },
-      {
-        header: '필터•정렬 기능을 추상화하여 동적 쿼리의 유지보수성 제고',
-        lines: [
-          '장소 나열 시 제공되는 필터 및 정렬에 대해, 모든 조합마다 각각의 쿼리를 짜는 것은 유지보수성을 저하시킨다고 판단',
-          '필터에 해당하는 where절, 정렬에 해당하는 order by 절을 QueryDSL을 이용하여 동적으로 구성 및 전략으로 추상화',
-        ],
-      },
+      // {
+      //   header: (
+      //     <>
+      //       Collaborative Filtering 활용&nbsp;
+      //       {makeLink(
+      //         PullRequestIcon,
+      //         '추천 시스템 구현',
+      //         'https://github.com/2-cha/2-cha/pull/103'
+      //       )}
+      //     </>
+      //   ),
+      //   lines: [
+      //     '유저의 활동을 기반으로 선호를 수치화하여, Collaborative Filtering을 적용',
+      //     '위치•최신순 기반의 Hybrid 방식 적용으로 Cold Start Problem 및 추천 로직에 대한 Fallback 마련',
+      //   ],
+      // },
+      // {
+      //   header: (
+      //     <>
+      //       Okapi BM25 Rank 알고리즘을 사용한&nbsp;
+      //       {makeLink(
+      //         PullRequestIcon,
+      //         '유사 게시글 추천 기능 구현',
+      //         'https://github.com/2-cha/2-cha/pull/108'
+      //       )}
+      //     </>
+      //   ),
+      //   lines: [
+      //     '다른 큐레이션으로의 자연스러운 탐색 유도를 위해,\n유저가 읽은 큐레이션의 타이틀•부제•태그를 활용한 유사 게시글 추천',
+      //   ],
+      // },
+      // {
+      //   header: '필터•정렬 기능을 추상화하여 동적 쿼리의 유지보수성 제고',
+      //   lines: [
+      //     '장소 나열 시 제공되는 필터 및 정렬에 대해, 모든 조합마다 각각의 쿼리를 짜는 것은 유지보수성을 저하시킨다고 판단',
+      //     '필터에 해당하는 where절, 정렬에 해당하는 order by 절을 QueryDSL을 이용하여 동적으로 구성 및 전략으로 추상화',
+      //   ],
+      // },
       // {
       //   header:
       //     '리뷰 작성 과정에서 태그 검색 시, 한글 초성•하이라이팅 지원으로 사용자 편의성 증대',
@@ -132,8 +131,7 @@ const where2goTasks: CategorizedTask[] = [
         ),
       },
       {
-        header:
-          '매뉴얼한 운영 작업 개선으로, 장애 시 클러스터 복구 시간 1/6로 단축',
+        header: '매뉴얼한 운영 작업 개선으로, 클러스터 복구 시간 1/6로 단축', // TODO: GitOps를 헤더에 표기..?
         lines: [
           <>
             {'ArgoCD 사용 '}
@@ -148,7 +146,7 @@ const where2goTasks: CategorizedTask[] = [
         ],
       },
       {
-        header: '비용 모니터링 및 관리 작업으로 CSP 리소스 비용 32% 절감',
+        header: '비용 모니터링 및 관리 작업으로 CSP 리소스 비용 33% 절감',
       },
       {
         header: 'ArgoCD•Tekton CI/CD 파이프라인 구축',
@@ -176,24 +174,24 @@ const where2goTasks: CategorizedTask[] = [
           // 'Prometheus + k8s HPA를 이용한 Autoscaling 구축으로 부하상황에서의 평균 RT 개선 및 TPS 유지',
         ],
       },
-      {
-        header: (
-          <>
-            로그 중앙집중화 및{' '}
-            {makeLink(
-              KibanaIcon,
-              '대시보드',
-              'https://api.2chaproj.com/kibana/app/dashboards#/view/4de3fae0-084b-11ee-b8f1-057c5d5c739d',
-              true
-            )}{' '}
-            구축
-          </>
-        ),
-        lines: [
-          'Multi-instance로 배포중인 애플리케이션의 로그가 산발적이어서 확인이 어려움',
-          'Logback + ELK Integration으로 로그의 중앙집중화 달성',
-        ],
-      },
+      // {
+      //   header: (
+      //     <>
+      //       로그 중앙집중화 및{' '}
+      //       {makeLink(
+      //         KibanaIcon,
+      //         '대시보드',
+      //         'https://api.2chaproj.com/kibana/app/dashboards#/view/4de3fae0-084b-11ee-b8f1-057c5d5c739d',
+      //         true
+      //       )}{' '}
+      //       구축
+      //     </>
+      //   ),
+      //   lines: [
+      //     'Multi-instance로 배포중인 애플리케이션의 로그가 산발적이어서 확인이 어려움',
+      //     'Logback + ELK Integration으로 로그의 중앙집중화 달성',
+      //   ],
+      // },
     ],
   },
 ];
