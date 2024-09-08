@@ -1,9 +1,9 @@
-import s from '@/components/Projects/Tasks/TasksUnderCategory/TasksUnderCategory.module.scss';
 import DownArrow from '@/components/Icon/DownArrow';
 import RightArrow from '@/components/Icon/RightArrow';
-import React, { useEffect, useRef, useState } from 'react';
+import s from '@/components/Projects/Tasks/TasksUnderCategory/TasksUnderCategory.module.scss';
 import { Task } from '@/types/Task';
 import cn from 'classnames';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface TaskContentProps {
   task: Task;
@@ -31,6 +31,7 @@ export default function TaskContent({ task }: TaskContentProps) {
         onClick={() => setShowDetail(!showDetail)}
       >
         <span className={s.taskHeader}>{task.header}</span>
+        <span className={s.taskHeaderDesc}>{task.headerDescription}</span>
         {isFoldable ? (
           showDetail ? (
             <DownArrow

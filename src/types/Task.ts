@@ -9,6 +9,7 @@ export enum TaskCategory {
 
 export interface Task {
   header: React.ReactNode;
+  headerDescription?: React.ReactNode;
   lines?: React.ReactNode[];
 }
 

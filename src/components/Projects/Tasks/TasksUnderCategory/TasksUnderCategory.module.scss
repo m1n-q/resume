@@ -36,6 +36,15 @@
   font-weight: 700;
 }
 
+.taskHeaderDesc {
+  @include mixins.padding(x, xs);
+  @include mixins.text-sm;
+
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #777676 !important;
+  font-weight: 300;
+}
+
 .foldingArrow {
   @include mixins.padding(left, xs);
   padding-bottom: 2px;
