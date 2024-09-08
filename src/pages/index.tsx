@@ -7,8 +7,8 @@ import aboutMe from '@/lib/contents/about-me';
 import certificates from '@/lib/contents/certificates';
 import educations from '@/lib/contents/educations';
 import openSources from '@/lib/contents/open-sources';
+import pong from '@/lib/contents/pong';
 import pushManager from '@/lib/contents/push-manager';
-import transcendence from '@/lib/contents/transcendence';
 import where2go from '@/lib/contents/where2go';
 import React, { DetailedHTMLProps, useEffect, useRef, useState } from 'react';
 import { useReactToPrint } from 'react-to-print';
@@ -51,7 +51,7 @@ export default function Home() {
       <Line />
       <Certificates certificates={certificates} />
       <Line />
-      <Projects infos={[where2go, pushManager, transcendence]} />
+      <Projects infos={[where2go, pushManager, pong]} />
       <Line />
       <OpenSource infos={openSources} />
       <Line />

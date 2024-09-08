@@ -1,9 +1,9 @@
-import ProjectInfo from '@/types/ProjectInfo';
-import LinkWithIcon from '@/components/LinkWithIcon';
 import GithubIcon from '@/components/Icon/GithubIcon';
-import transcendenceTasks from '@/lib/contents/transcendenceTasks';
-import Link from 'next/link';
+import LinkWithIcon from '@/components/LinkWithIcon';
 import LinkWithPreview from '@/components/LinkWithPreview';
+import pongTasks from '@/lib/contents/pongTasks';
+import ProjectInfo from '@/types/ProjectInfo';
+import Link from 'next/link';
 
 const stacks = {
   backend: [
@@ -17,8 +17,8 @@ const stacks = {
   ],
 };
 
-const transcendence: ProjectInfo = {
-  name: 'transcendence',
+const pong: ProjectInfo = {
+  name: '42pong',
   period: '2022.11 - 2022.12',
   team: 'Backend 2, Frontend 2',
   links: [
@@ -48,7 +48,7 @@ const transcendence: ProjectInfo = {
     backend: stacks['backend'],
     devOps: stacks['devOps'],
   },
-  tasks: transcendenceTasks,
+  tasks: pongTasks,
 };
 
-export default transcendence;
+export default pong;

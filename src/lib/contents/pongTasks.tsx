@@ -1,8 +1,8 @@
+import LinkWithPreview from '@/components/LinkWithPreview';
 import { CategorizedTask, TaskCategory } from '@/types/Task';
 import React from 'react';
-import LinkWithPreview from '@/components/LinkWithPreview';
 
-const transcendenceTasks: CategorizedTask[] = [
+const pongTasks: CategorizedTask[] = [
   {
     category: TaskCategory.BACKEND,
     tasks: [
@@ -58,4 +58,4 @@ const transcendenceTasks: CategorizedTask[] = [
   },
 ];
 
-export default transcendenceTasks;
+export default pongTasks;
